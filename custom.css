@@ -1,0 +1,404 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+/* nav ----------------------------------------------------------*/
+
+.menu-item {
+	background-color: #69BFB7;
+}
+
+.menu-link{
+	padding: 15px;
+}
+
+.menu-item.bg-color > a{
+	background-color: #0A7368;
+}
+
+.menu-item.bg-color:hover > a{
+	cursor: pointer;
+	opacity: 0.8;
+	scale: 1.05;
+	transition: 0.3s;
+}
+
+/* slider --------------------------------------------------------*/
+
+.emphasis-title h2, p{
+	color: #262626;
+}
+
+.emphasis-title p{
+	color: #262626;
+}
+
+.emphasis-title p span{
+	background-color: #8dc2bc;
+}
+
+.emphasis-title:first-child a{
+	background-color: #0A7368;
+}
+
+/* arreglar lo del background del texto */
+
+/* Content what we do------------------------------------------------------- */
+
+#content .we .fbox-content{
+	background-color: #A9D9D9;
+}
+
+#content .we .fbox-content h3{
+	color: #000;
+}
+
+#content .we .fbox-content span{
+	color: #262626;
+}
+
+#content .we .fbox-content a{
+	color: #752A03 !important;
+}
+
+#content .we img{
+	width: 300px !important;
+	aspect-ratio: 0.87 !important;
+}
+
+/* Content join---------------------------------------------------------------- */
+
+#content .join{
+	padding: 60px 0;
+}
+
+#content .join .heading-block a{
+	background-color: #0A7368 !important;
+}
+
+#content .join .heading-block a:hover:not(span){
+	opacity: 0.7 !important;
+}
+
+#content .join .heading-block a:hover span{
+	color: #000;
+}
+
+#content .join-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 500px;
+	gap: 10px;
+}
+
+#content .join-container > div{
+	flex: 0 0 120px;
+	border-radius: 0.5rem;
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+	box-shadow: 1px 5px 15px #1e0e3e;
+	position: relative;
+	overflow: hidden;
+}
+
+#content .join-container > div h2{
+	color: #fff;
+}
+
+#content .join-container > div:nth-of-type(1){
+	background: url("../img/stock/paloma-arte.jpg")
+	no-repeat 50% / cover;
+}
+
+#content .join-container > div:nth-of-type(2){
+	background: url("../img/stock/paloma-linda.jpg")
+	no-repeat 50% / cover;
+}
+
+#content .join-container > div:nth-of-type(3){
+	background: url("../img/stock/paloma-pareja.jpg")
+	no-repeat 50% / cover;
+}
+
+#content .join-container > div:nth-of-type(4){
+	background: url("../img/stock/paloma-depresion.jpg")
+	no-repeat 50% / cover;
+}
+
+#content .join-container > div .content {
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    opacity: 0;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    background: linear-gradient(0deg, rgba(2, 2, 46, 0.6755077030812324) 0%, rgba(255, 255, 255, 0) 100%);
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+    visibility: hidden;
+}
+
+#content .join-container > div:hover {
+    flex: 0 0 250px;
+    box-shadow: 1px 3px 15px #0A7368;
+    transform: translateY(-30px);
+}
+
+#content .join-container > div:hover .content {
+    opacity: 1;
+    transform: translateY(0%);
+    visibility: visible;
+}
+
+#content .join-container > div .content span {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+
+/* content título gallery-------------------------------------------------------- */
+
+#content .t-gallery{
+	background-color: #F2F2F2;
+	padding-top: 60px;
+}
+
+/* content gallety-------------------------------------------------------- */
+
+#content .gallery{
+	background-color: #F2F2F2;
+	padding: 60px 0;
+	display: flex;
+	justify-content: center;
+	grid-gap: 10px;
+}
+
+#content .gallery a img{
+	width: 250px;
+	aspect-ratio: 1.36;
+	object-fit: cover;
+}
+
+#content .gallery a:hover{
+	scale: 1.1;
+	transition: 0.3s;
+	z-index: 100;
+}
+
+#content .gallery:hover a:not(a:hover){
+	filter: blur(2px);
+}
+
+/* content our products-------------------------------------------------------- */
+
+#content .products{
+	padding-bottom: 30px;
+}
+
+#content .products .topmargin{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 0;
+}
+
+#content .products .carousel-inner{
+	display: flex;
+	overflow: hidden;
+}
+
+#content .products .rama{
+	width: 450px;
+	z-index: 10000;
+	position: absolute;
+	left: -99px;
+	top: -20px;
+}
+
+#content .topmargin .product img{
+	width: 230px;
+	aspect-ratio: 0.85;
+}
+
+#content .topmargin .product:hover img{
+	scale: 1.02;
+}
+
+#content .topmargin .product a:hover{
+	color: #69BFB7;
+}
+
+#content .topmargin .product ins{
+	color: #0A7368;
+}
+
+#content .products .mirada{
+	width: 432px;
+	z-index: 100000;
+	position: absolute;
+	right: -99px;
+	bottom: 0;
+}
+
+	/* carrusel */
+	
+
+/* paralax--------------------------------------------------------------------- */	
+
+#content .paral{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content .paral a:hover{
+	background-color: #0A7368;
+	color: white;
+}
+
+#content .paral .pajaro{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	background: url(../img/sprite-paloma-removebg-preview1.png);
+	/* background-position: 8%; */
+}
+
+#content .paral .pajaro.n1 {
+	right: 0;
+	top: -10px;
+	background-position: 8%;
+}
+
+#content .paral .pajaro.n2 {
+	left: 100px;
+	top: -80px;
+	background-position: 15%;
+}
+
+#content .paral .pajaro.n3 {
+	left: 0;
+	bottom: 20px;
+	background-position: 22%;
+}
+
+#content .paral .pajaro.n4 {
+	left: 100px;
+	top: 320px;	
+	background-position: 28%;
+}
+
+#content .paral .pajaro.n5 {
+	right: -400px;
+	top: -50px;
+	background-position: 34%;
+}
+
+#content .paral .pajaro.n6 {
+	right: -130px;
+	top: 60px;
+	background-position: 41%;
+} 
+#content .paral .pajaro.n7 {
+	right: -600px;
+	top: -80px;
+	background-position: 48%;
+} 
+#content .paral .pajaro.n8 {
+	right: 0;
+	top: 250px;
+	background-position: 54%;
+} 
+
+#content .paral .pajaro.n9 {
+	right: -470px;
+	top: 140px;
+	background-position: 60%;
+} 
+
+#content .paral .pajaro.n10 {
+	right: -240px;
+	top: -140px;
+	background-position: 67%;
+} 
+
+@keyframes show{
+	0%{
+		background-position: 10%;
+	}
+	10%{
+		background-position: 15%;
+	}
+	20%{
+		background-position: 20%;
+	}
+	30%{
+		background-position: 25%;
+	}
+	40%{
+		background-position: 30%;
+	}
+	50%{
+		background-position: 35%;
+	}
+	60%{
+		background-position: 40%;
+	}
+	70%{
+		background-position: 45%;
+	}
+	80%{
+		background-position: 50%;
+	}
+	90%{
+		background-position: 55%;
+	}
+	100%{
+		background-position: 60%;
+	}
+}
+@keyframes fly {
+	to{
+		transform: translateX(1250px);
+	}
+}
+
+.pajaro{
+	height: ;
+}
+.pajaro{
+	animation: fly steps(16, end);
+}
+
+img{
+	view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: show;
+}
+
+/* Conten need help------------------------------------------------------------ */
+
+#content .help h3{
+	background-color: #8dc2bc;
+	color: #000;
+	opacity: 0.7;
+}
+
+#content .help span{
+	background-color: #8dc2bc;
+	opacity: 0.7;
+	color: #000;
+}
